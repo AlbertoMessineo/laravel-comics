@@ -17,6 +17,11 @@
             </div>
         </header>
 
+        @foreach ($comics as $comic )
+        <li>{{$comic['title']}}</li>
+        @endforeach
+        {{-- @yield('main') --}}
+
         <img src="{{ Vite::asset('resources/img/duck.jpg') }}" alt="">
     </div>
 
